@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Camilo Montealegre" />
-    <meta name="description" content="This is a simple description" />
-    <title>Template</title>
+    <meta name="description" content="This is a simple calculator" />
+    <title>Calculator</title>
     <!-- CSS links -->
-    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="icon" href="./favicon.png" />
     <!-- Icons -->
@@ -19,6 +19,50 @@
     ></script>
   </head>
   <body>
+    <!-- Calculator -->
+    <div class="wrapper">
+      <!-- Header -->
+      <header class="header"></header>
+      <h1 class="title">
+        Calculator |
+        <a href="https://github.com/ocamilomontealegre"
+          >@ocamilomontealegre <span class="fa-brands fa-square-github"></span
+        ></a>
+      </h1>
+
+      <!-- Calculator -->
+      <div class="calculator">
+        <!-- Screen -->
+        <div class="calculator-screen">
+          <div class="screen-operation"></div>
+          <div class="screen-result"></div>
+        </div>
+
+        <!-- Keyboard -->
+        <div class="calculator-keyboard">
+          <button class="button" value="C"></button>
+          <button class="button" value="%"></button>
+          <button class="button" value="%"></button>
+          <button class="button" value="/"></button>
+          <button class="button" value="7"></button>
+          <button class="button" value="8"></button>
+          <button class="button" value="9"></button>
+          <button class="button" value="*"></button>
+          <button class="button" value="4"></button>
+          <button class="button" value="5"></button>
+          <button class="button" value="6"></button>
+          <button class="button" value="-"></button>
+          <button class="button" value="1"></button>
+          <button class="button" value="2"></button>
+          <button class="button" value="3"></button>
+          <button class="button" value="+"></button>
+          <button class="button" value="0"></button>
+          <button class="button" value="."></button>
+          <button class="button" value="="></button>
+        </div>
+      </div>
+    </div>
+
     <!-- Scripts -->
     <script src="./js/scripts.js"></script>
   </body>
