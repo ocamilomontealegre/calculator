@@ -125,10 +125,13 @@ h1 {
   border: none;
   border-radius: 50%;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-size: 1rem;
+  font-weight: 400;
   background-color: var(--color-1);
 }
 
 .calculator-keyboard .chosen-one {
   flex: 0.9;
   border-radius: 2rem;
+  color: var(--color-2);
 }
