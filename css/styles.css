@@ -9,8 +9,18 @@
 }
 
 body {
+  margin: 0;
+  padding: 0;
   font-family: Poppins, Arial, Helvetica, sans-serif;
-  
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  margin: 0;
 }
 
 /*** Variables ***/
@@ -21,4 +31,21 @@ body {
   --color-4: #737373;
 }
 
+/*** Wrapper ***/
+.wrapper {
+  margin: 0;
+  padding: 0;
+}
+
 /*** Header ***/
+.header {
+  padding: 0.5rem 2rem;
+  font-size: 0.8rem;
+  text-align: center;
+  color: white;
+  background-color: var(--color-2);
+}
+
+.header a {
+  color: white;
+}
