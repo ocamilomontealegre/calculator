@@ -103,7 +103,7 @@ h1 {
 
 .calculator-screen .screen-result {
   height: 60%;
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: var(--color-2);
 }
 
