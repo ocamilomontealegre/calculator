@@ -9,6 +9,8 @@
 }
 
 body {
+  width: 100%;
+  min-height: 100%;
   margin: 0;
   padding: 0;
   font-family: Poppins, Arial, Helvetica, sans-serif;
@@ -33,12 +35,20 @@ h1 {
 
 /*** Wrapper ***/
 .wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
 
 /*** Header ***/
 .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
   padding: 0.5rem 2rem;
   font-size: 0.8rem;
   text-align: center;
@@ -48,4 +58,49 @@ h1 {
 
 .header a {
   color: white;
+}
+
+/*** Calculator ***/
+.calculator {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  width: 40%;
+  height: 80vh;
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  background-color: var(--color-1);
+}
+
+/*** Calculator Screen ***/
+.calculator .calculator-screen {
+  width: 100%;
+  height: 20vh;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  background-color: var(--color-3);
+}
+
+.calculator-screen .screen-operation,
+.calculator-screen .screen-result {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  text-align: end;
+  
+}
+
+.calculator-screen .screen-operation {
+  height: 40%;
+  color: var(--color-4);
+}
+
+.calculator-screen .screen-result {
+  height: 60%;
+  font-size: 4rem;
+  color: var(--color-2);
 }
