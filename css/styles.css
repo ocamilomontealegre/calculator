@@ -15,7 +15,10 @@ body {
 
 /*** Variables ***/
 :root {
-  --main-color: ;
-  --secondary-color: ;
-  --third-color: #fff;
+  --color-1: #FFDD5E;
+  --color-2: #201F1A;
+  --color-3: #FFFFFF;
+  --color-4: #737373;
 }
+
+/*** Header ***/
