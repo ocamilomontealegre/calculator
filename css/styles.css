@@ -63,11 +63,11 @@ h1 {
 /*** Calculator ***/
 .calculator {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   align-items: center;
-  width: 40%;
-  height: 80vh;
-  margin: 2rem;
+  min-width: 30%;
+  height: 85vh;
+  margin: 1rem;
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
@@ -76,8 +76,10 @@ h1 {
 
 /*** Calculator Screen ***/
 .calculator .calculator-screen {
+  display: flex;
+  flex-flow: column wrap;
   width: 100%;
-  height: 20vh;
+  height: 20%;
   border-radius: 10px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   background-color: var(--color-3);
@@ -103,4 +105,30 @@ h1 {
   height: 60%;
   font-size: 4rem;
   color: var(--color-2);
+}
+
+/*** Calculator Keyboard ***/
+.calculator .calculator-keyboard {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  height: 75%;
+  margin: 0.5rem 0;
+}
+
+.calculator-keyboard .button {
+  width: 20%;
+  height: 10vh;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  background-color: var(--color-1);
+}
+
+.calculator-keyboard .chosen-one {
+  flex: 0.85;
+  border-radius: 2rem;
 }
